@@ -56,5 +56,5 @@ document.getElementById('jodohForm').addEventListener('submit', function(e) {
   const index = (tanggal * bulan) % 7;
   let jodoh = (gender === 'L') ? perempuanNames[index] : lakiNames[index];
 
-  document.getElementById('hasil').innerText = `Jodoh tebakan kamu adalah: ${jodoh} 💕`;
+  document.getElementById('hasil').innerText = `Nama Jodoh Kamu adalah: ${jodoh} 💕`;
 });
