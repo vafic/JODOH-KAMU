@@ -1,0 +1,78 @@
+style.css:
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #d6336c;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #880e4f;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #d6336c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ad1457;
+}
+
+#hasil {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.kartun-cinta {
+  width: 100px;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #999;
+}
