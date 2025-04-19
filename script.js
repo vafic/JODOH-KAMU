@@ -53,7 +53,7 @@ document.getElementById('jodohForm').addEventListener('submit', function(e) {
   const bulan = parseInt(document.getElementById('bulan').value);
   const gender = document.getElementById('gender').value;
 
-  const index = (tanggal * bulan) % 99;
+  const index = (tanggal * bulan) % 10;
   let jodoh = (gender === 'L') ? perempuanNames[index] : lakiNames[index];
 
   document.getElementById('hasil').innerText = `Nama Jodoh Kamu adalah: ${jodoh} 💕`;
