@@ -53,8 +53,10 @@ document.getElementById('jodohForm').addEventListener('submit', function(e) {
   const bulan = parseInt(document.getElementById('bulan').value);
   const gender = document.getElementById('gender').value;
 
-  const index = (tanggal * bulan) %7;
-  let jodoh = (gender === 'L') ? perempuanNames[index] : lakiNames[index];
+  const namaArray = (gender === 'L') ? perempuanNames : lakiNames;
+  const index = (tanggal * bulan) % namaArray.length;
+  const jodoh = namaArray[index];
 
   document.getElementById('hasil').innerText = `Nama Jodoh Kamu adalah: ${jodoh} 💕`;
 });
+
